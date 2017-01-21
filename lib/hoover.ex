@@ -7,6 +7,7 @@ defmodule Hoover do
       "https://api.digitalocean.com/v2/images",
       [ "Authorization": "Bearer #{@digital_ocean_api_key}",
         "Content-Type": "application/json"],
-      @hackney_options)
+      @hackney_options).body
+    |> Poison.decode!()
   end
 end

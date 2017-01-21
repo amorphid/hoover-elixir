@@ -29,14 +29,16 @@ defmodule Hoover.Mixfile do
 
   defp deps() do
     [
-      {:httpoison, "~> 0.11.0"}
+      {:httpoison, "~> 0.11.0"},
+      {:poison, "~> 3.0"}
     ]
   end
 
   defp extra_applications() do
     [
       :httpoison,
-      :logger
+      :logger,
+      :poison
     ]
   end
 end
