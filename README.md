@@ -1,19 +1,21 @@
 # Hoover
 
-**TODO: Add description**
+A collection of Elixir functions that hoove (aka fetch) data from remote various sources.
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `hoover` to your list of dependencies in `mix.exs`:
+Add the following to you `mix.exs`:
 
-```elixir
-def deps do
-  [{:hoover, "~> 0.1.0"}]
-end
-```
+    def application do
+      [extra_applications: [:hoover]]
+    end
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/hoover](https://hexdocs.pm/hoover).
+    def deps do
+      [{:hoover, "~> 0.1.0"}]
+    end
 
+## Helpful links
+
+* [Changelog](CHANGELOG.md)
+* [License](LICENSE.md)
+* [Version](VERSION.txt)
